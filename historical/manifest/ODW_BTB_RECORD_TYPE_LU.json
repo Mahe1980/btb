@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+     "name": "BTB_BILL_TYPE_KEY",
+     "dtype": "bigint"
+    },
+    {
+     "name":"BTB_RECORD_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_BATCH_ID",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"RECORD_TYPE",
+     "dtype":"string"
+    }
+  ]
+}

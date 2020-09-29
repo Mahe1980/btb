@@ -1,0 +1,8 @@
+
+[
+  {"name":"LINE_TEST_FAULT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"FAULT_CODE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"FAULT_LOCATION", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"FAULT_REPORT_ADVISED", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

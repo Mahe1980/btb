@@ -1,0 +1,5 @@
+- hosts: mapr
+  remote_user: maprsouth
+  tasks:
+    - name: Update datafrost
+      git: repo=git@gitlab.sns.sky.com:dw/datafrost.git dest=~/datafrost version=master accept_hostkey=yes force=yes update=yes key_file=~/.ssh/rsa_git

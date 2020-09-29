@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+     "name": "MD_INS_TS",
+     "dtype": "timestamp"
+    },
+    {
+     "name":"SPM_STATUS_KEY",
+     "dtype":"byteint"
+    },
+    {
+     "name":"STATUS",
+     "dtype":"string"
+    }
+  ]
+}

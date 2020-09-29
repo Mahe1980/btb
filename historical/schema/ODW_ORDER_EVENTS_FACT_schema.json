@@ -1,0 +1,14 @@
+
+[
+  {"name":"ORDER_EVENT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"EVENT_SOURCE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"EVENT_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"EVENT_TYPE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"CREATED_AT", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"CREATED_BY", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MESSAGE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_BATCH_ID", "type": "INT64", "mode": "REQUIRED"}
+]

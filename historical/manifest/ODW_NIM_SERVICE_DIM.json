@@ -1,0 +1,164 @@
+{
+  "fields": [
+    {
+      "name": "NIM_SERVICE_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "NIM_SERVICE_ID",
+      "dtype": "integer"
+    },
+    {
+      "name": "LEGACY_PATH_ID",
+      "dtype": "string"
+    },
+    {
+      "name": "PORT_NUMBER",
+      "dtype": "smallint"
+    },
+    {
+      "name": "CARD_NUMBER",
+      "dtype": "byteint"
+    },
+    {
+      "name": "ACCESS_NODE_NUMBER",
+      "dtype": "byteint"
+    },
+    {
+      "name": "EXCHANGE_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "SERVICE_TYPE",
+      "dtype": "string"
+    },
+    {
+      "name": "DIRECTORY_NUMBER",
+      "dtype": "string"
+    },
+    {
+      "name": "PROFILE_ID",
+      "dtype": "smallint"
+    },
+    {
+      "name": "RESERVED_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "LATEST_CONFIGURED_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "SERVICE_START_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "LATEST_COMMISSIONED_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "CANCELLED_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "CANCELLATION_EFF_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "NETWORK_PRODUCT_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "LINE_LENGTH",
+      "dtype": "integer"
+    },
+    {
+      "name": "PORT_ID",
+      "dtype": "integer"
+    },
+    {
+      "name": "SOURCE_SYSTEM",
+      "dtype": "string"
+    },
+    {
+      "name": "PRODUCT_UP_SPEED",
+      "dtype": "integer"
+    },
+    {
+      "name": "PRODUCT_DOWN_SPEED",
+      "dtype": "integer"
+    },
+    {
+      "name": "DATA_SNS_SERVICE_ID",
+      "dtype": "integer"
+    },
+    {
+      "name": "VOICE_SNS_SERVICE_ID",
+      "dtype": "integer"
+    },
+    {
+      "name": "NIM_OPERATOR_ID",
+      "dtype": "string"
+    },
+    {
+      "name": "ON_BNG",
+      "dtype": "smallint"
+    },
+    {
+      "name": "CGN_EXCLUSION_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "CGN_EXCLUSION_REASON",
+      "dtype": "smallint"
+    },
+    {
+      "name": "CGN_BLACKLIST_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "CGN_STATUS",
+      "dtype": "string"
+    },
+    {
+      "name": "UPDATED_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_CURR_FLAG",
+      "dtype": "string"
+    },
+    {
+      "name": "MD_EFFCTV_FROM_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_EFFCTV_TO_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_INS_INITIAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_ACTUAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_UPD_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_UPD_INITIAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_UPD_ACTUAL_BATCH_ID",
+      "dtype": "bigint"
+    }
+  ]
+ }

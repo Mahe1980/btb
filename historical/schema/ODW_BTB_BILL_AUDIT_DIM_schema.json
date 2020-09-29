@@ -1,0 +1,22 @@
+
+[
+  {"name":"BTB_FILE_KEY", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"LANDED_ADJ_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"LANDED_ADJ_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"LANDED_EVENT_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"LANDED_EVENT_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"LANDED_PRODUCT_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"LANDED_PRODUCT_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_ADJ_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_ADJ_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_EVENT_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_EVENT_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_PRODUCT_RECORDS", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"WAREHOUSE_PRODUCT_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"TOTAL_RECORDS_LANDED", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"TOTAL_LANDED_VALUE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"TOTAL_RECORDS_WAREHOUSED", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"TOTAL_VALUE_WAREHOUSED", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"PROCESSED_DATETIME", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "NULLABLE"}
+]

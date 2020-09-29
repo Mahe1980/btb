@@ -1,0 +1,8 @@
+
+[
+  {"name":"TROUBLE_REPORT_EVENT_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"EVENT_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_UPD_TS", "type": "TIMESTAMP", "mode": "NULLABLE"}
+]

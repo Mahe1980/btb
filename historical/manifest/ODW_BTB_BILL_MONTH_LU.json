@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "name": "BILL_MONTH",
+      "dtype": "string"
+    },
+    {
+      "name": "BILL_TAX_DATE",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "BTB_BILL_MONTH_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "BTB_BILL_YEAR_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "DATE_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "END_CURRENT_MONTH",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "END_OF_ADVANCE_MONTH",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "START_CURRENT_MONTH",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "START_OF_ADVANCE_MONTH",
+      "dtype": "timestamp"
+    }
+  ]
+ }

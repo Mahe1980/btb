@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+     "name": "FAULT_CODE",
+     "dtype": "string"
+    },
+    {
+     "name":"FAULT_LOCATION",
+     "dtype":"string"
+    },
+    {
+     "name":"FAULT_REPORT_ADVISED",
+     "dtype":"string"
+    },
+    {
+     "name":"LINE_TEST_FAULT_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    }
+  ]
+}

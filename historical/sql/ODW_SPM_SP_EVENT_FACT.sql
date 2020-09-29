@@ -1,0 +1,29 @@
+SELECT 
+    MD_UPD_BATCH_ID,
+    MD_INS_BATCH_ID,
+    DURATION_MS,
+    SPM_AGENT_KEY,
+    PREV_SPM_QUEUE_KEY,
+    SPM_QUEUE_KEY,
+    SPM_SERVICE_PROBLEM_KEY,
+    SPM_SP_EVENT_KEY,
+    QUEUE_MOVEMENT_NO,
+    NOTE,
+    TRANSFER_DETAILS,
+    CREATED_BY,
+    EVENT_TYPE,
+    MD_UPD_TS,
+    MD_INS_TS,
+    END_TS,
+    START_TS,
+    TROUBLE_REPORT_IND,
+    WORK_REMINDER_IND,
+    SPM_STATUS_KEY
+FROM ODW_SPM_SP_EVENT_FACT
+WHERE (
+    MD_INS_TS >= '{from_ts}'
+    AND MD_INS_TS < '{to_ts}'
+) OR (
+    MD_UPD_TS >= '{from_ts}'
+    AND MD_UPD_TS < '{to_ts}'
+);

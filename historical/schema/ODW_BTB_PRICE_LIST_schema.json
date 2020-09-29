@@ -1,0 +1,27 @@
+
+[
+  {"name":"BTB_PRICE_LIST_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SERVICE_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"BILL_ACCOUNT_CODE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"RECORD_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"CHARGE_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"CHARGE_SUB_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"CHARGE_CODE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"CHARGE_DESCRIPTION", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"UNIT_PRICE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"PRICE_UNIT", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ACCOUNTCODE1", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ACCOUNTCODE2", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"CODING_CATEGORY", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ACCOUNTCODE2_UNIT_PRICE", "type": "FLOAT64", "mode": "NULLABLE"},
+  {"name":"EFFECTIVE_START_DATE", "type": "DATE", "mode": "NULLABLE"},
+  {"name":"EFFECTIVE_END_DATE", "type": "DATE", "mode": "NULLABLE"},
+  {"name":"NOTES", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MODIFIED_BY", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"LAST_MODIFIED_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_EFFCTV_FROM_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_EFFCTV_TO_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_UPD_TS", "type": "TIMESTAMP", "mode": "NULLABLE"}
+]

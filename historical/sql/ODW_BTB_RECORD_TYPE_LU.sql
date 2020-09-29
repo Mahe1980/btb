@@ -1,0 +1,11 @@
+SELECT 
+    MD_BATCH_ID,
+    BTB_BILL_TYPE_KEY,
+    BTB_RECORD_TYPE_KEY,
+    RECORD_TYPE,
+    MD_INS_TS
+FROM ODW_BTB_RECORD_TYPE_LU
+WHERE (
+    MD_INS_TS >= '{from_ts}'
+    AND MD_INS_TS < '{to_ts}'
+);

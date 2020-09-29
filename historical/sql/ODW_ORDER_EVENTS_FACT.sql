@@ -1,0 +1,17 @@
+SELECT 
+    MD_INS_BATCH_ID,
+    ORDER_ID,
+    EVENT_ID,
+    ORDER_KEY,
+    ORDER_EVENT_KEY,
+    MESSAGE,
+    CREATED_BY,
+    EVENT_TYPE,
+    EVENT_SOURCE,
+    MD_INS_TS,
+    CREATED_AT
+FROM ODW_ORDER_EVENTS_FACT
+WHERE (
+    MD_INS_TS >= '{from_ts}'
+    AND MD_INS_TS < '{to_ts}'
+);

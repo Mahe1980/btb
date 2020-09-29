@@ -1,0 +1,11 @@
+SELECT
+    ORDER_SERVICES_KEY,
+    ORDER_ID,
+    SERVICE_ID,
+    LAST_MODIFIED_DATE,
+    MD_INS_TS
+FROM ODW_ORDER_SERVICES_LINK
+WHERE (
+    MD_INS_TS >= '{from_ts}'
+    AND MD_INS_TS < '{to_ts}'
+);

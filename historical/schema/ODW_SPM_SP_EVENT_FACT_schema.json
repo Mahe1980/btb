@@ -1,0 +1,23 @@
+
+[
+  {"name":"SPM_SP_EVENT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SPM_SERVICE_PROBLEM_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SPM_QUEUE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"PREV_SPM_QUEUE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SPM_AGENT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SPM_STATUS_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"EVENT_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"CREATED_BY", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"WORK_REMINDER_IND", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"TROUBLE_REPORT_IND", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"START_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"END_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"DURATION_MS", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"QUEUE_MOVEMENT_NO", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"TRANSFER_DETAILS", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"NOTE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_UPD_TS", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"MD_UPD_BATCH_ID", "type": "INT64", "mode": "NULLABLE"}
+]

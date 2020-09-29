@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+     "name": "ACQUISITION_TYPE",
+     "dtype": "string"
+    },
+    {
+     "name":"MD_CURR_FLAG",
+     "dtype":"string"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"ORDER_TYPE_CODE",
+     "dtype":"string"
+    },
+    {
+     "name":"ORDER_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"PARENT_ORDER_TYPE_CODE",
+     "dtype":"string"
+    },
+    {
+     "name":"PROVIDE_REQUEST_TYPE",
+     "dtype":"string"
+    }
+  ]
+}

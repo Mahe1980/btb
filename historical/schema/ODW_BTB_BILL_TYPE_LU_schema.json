@@ -1,0 +1,16 @@
+
+[
+  {"name":"BTB_BILL_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BILL_TITLE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"SERVICE_TYPE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"CUSTOMER_REFERENCE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ACCOUNT_REFERENCE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"BUSINESS_NAME", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ADDRESS_NAME", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ADDRESS_FIRST_LINE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"POST_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"VAT_STATUS", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"BILL_TYPE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

@@ -1,0 +1,18 @@
+
+[
+  {"name":"SPM_AGENT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"AGENT_CODE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"FIRST_NAME", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"LAST_NAME", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"TEAM_NAME", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ROLE_CODE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_EFFCTV_FROM_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_EFFCTV_TO_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_INITIAL_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_INS_ACTUAL_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_UPD_TS", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"MD_UPD_INITIAL_BATCH_ID", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"MD_UPD_ACTUAL_BATCH_ID", "type": "INT64", "mode": "NULLABLE"}
+]

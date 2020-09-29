@@ -1,0 +1,41 @@
+{
+  "dev": { "hostname": "dv2etl-bllon01-private.sns.sky.com",
+           "sid": "DV2ETL.SNS.SKY.COM",
+           "user": "dv1_ctl_user",
+           "owner": "dv1_ctl_owner",
+           "password": "VzH+6mFl8EB/5IakmKm7SUlX+AdGTBl3m+Mz+7MmAl84sCEe0rG+dGj6yc4EVbre",
+           "nz_ctl_conn_name": "dv1_odw_owner@elbrus.sns.sky.com",
+           "oracle_ctl_conn_name": "dv1_ctl_user@dv2etl-bllon01-private.sns.sky.com"
+  },
+  "tst": {
+           "hostname": "dv2etl-bllon01-private.sns.sky.com",
+           "sid": "DV2ETL.SNS.SKY.COM",
+           "user": "ts1_ctl_user",
+           "owner": "ts1_ctl_owner",
+           "password": "nNL8RO0I+LE828ELTnPqX+ucB4fgdaRxUoPzLZIImy8iD/ushF9UWN7TJo9VexNK",
+           "nz_ctl_conn_name": "ts1_odw_owner@snsnetezzatest.sns.sky.com",
+           "oracle_ctl_conn_name": "ts1_ctl_user@dv2etl-bllon01-private.sns.sky.com"
+  },
+  "lt2": {
+           "hostname": "lt1etl-bllon01-private.sns.sky.com",
+           "sid": "LT1ETL.SNS.SKY.COM",
+           "user": "lt2_ctl_user",
+           "owner": "lt2_ctl_owner",
+           "password": "x9BzayB8xhi/WcrHJl9noINApKqWG8g/sXM8STZ+qGO95LH/6HbJn+Fm4N9brQvP",
+           "nz_ctl_conn_name": "lt2_etl_user@snsnetezzatest.sns.sky.com",
+           "oracle_ctl_conn_name": "lt2_ctl_user@ts1etl-db.sns.sky.com"
+  },
+  "prd": {
+           "hostname": "prodetl2.sns.sky.com",
+           "sid": "PRODETL2.SNS.SKY.COM",
+           "user": "prd_ctl_user",
+           "owner": "prd_ctl_owner",
+           "password": "Ww44UTEANnEWbAEmIOudt3ZHAiCVvWDOE9zpvRN5BuyDk4JYkHdpZYEEJSzIwuuH",
+           "nz_ctl_conn_name": "prd_etl_user@snsnetezzaprod.sns.sky.com",
+           "oracle_ctl_conn_name": "prd_ctl_user@prodetl2.sns.sky.com"
+  },
+  "common": {
+            "port": 1521,
+            "default_chunk": 100000
+  }
+}

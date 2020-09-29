@@ -1,0 +1,78 @@
+{
+  "btb_daily_extract": {
+    "scope": "BTB",
+    "frequency": "DAILY",
+    "json_output_folder": "json_output/daily",
+    "delta_output_folder": "delta_output",
+    "dag_timeout_min": 120,
+    "hwm": {
+      "unit": "hours",
+      "value": 2
+    },
+    "source_names": [
+      "ODW_SPM_TR_LT_AP_LINK_FACT",
+      "ODW_TROUBLE_REPORT_EVENT_HISTORY_FACT",
+      "ODW_LINE_TEST_FACT",
+      "ODW_ORDER_EVENTS_FACT",
+      "ODW_BTB_CHALLENGE",
+      "ODW_SPM_AGENT_DIM",
+      "ODW_SPM_SERVICE_PROBLEM_DIM",
+      "ODW_SPM_SP_EVENT_FACT",
+      "ODW_TROUBLE_REPORT_DIM",
+      "ODW_NIM_SERVICE_DIM",
+      "ODW_ORDER_SERVICES_LINK",
+      "ODW_ORDERS_DIM",
+      "ODW_PENFOLD_DSL_SERVICE_DIM",
+      "ODW_VOICE_SERVICE_DIM"
+    ]
+  },
+  "btb_monthly_extract": {
+    "scope": "BTB",
+    "frequency": "MONTHLY",
+    "json_output_folder": "json_output/monthly",
+    "delta_output_folder": "delta_output",
+    "dag_timeout_min": 120,
+    "hwm": {
+      "unit": "hours",
+      "value": 2
+    },
+    "source_names": [
+      "ODW_BTB_BILL_YEAR_LU",
+      "ODW_BTB_FACT",
+      "ODW_BTB_BILL_AUDIT_DIM",
+      "ODW_BTB_UIN_FILE_DIM",
+      "ODW_SPM_QUEUE_DIM",
+      "ODW_LINE_TEST_FAULT_DIM",
+      "ODW_BTB_BILL_MONTH_LU",
+      "ODW_BTB_BILL_TYPE_LU",
+      "ODW_BTB_CHARGE_CODE_LU",
+      "ODW_BTB_CHARGE_DESCRIPTION_LU",
+      "ODW_BTB_CHARGE_SUB_TYPE_LU",
+      "ODW_BTB_CHARGE_TYPE_LU",
+      "ODW_BTB_PRICE_LIST",
+      "ODW_BTB_RECORD_TYPE_LU",
+      "ODW_SPM_STATUS_DIM",
+      "ODW_TROUBLE_REPORT_EVENT_TYPE_DIM",
+      "ODW_LINE_TEST_SERVICE_TYPE_DIM",
+      "ODW_LINE_TEST_STATUS_DIM",
+      "ODW_OPERATOR_DIM",
+      "ODW_ORDER_STATUS_DIM",
+      "ODW_ORDER_TYPE_DIM"
+    ]
+  },
+  "btb_hourly_extract": {
+    "scope": "BTB",
+    "frequency": "HOURLY",
+    "json_output_folder": "json_output/hourly",
+    "delta_output_folder": "delta_output",
+    "dag_timeout_min": 120,
+    "hwm": {
+      "unit": "hours",
+      "value": 2
+    },
+    "source_names": []
+  },
+  "btb_house_keeping": {
+    "days_to_retain": 60
+  }
+}

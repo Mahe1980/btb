@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+     "name": "EVENT_TYPE",
+     "dtype": "string"
+    },
+    {
+     "name":"MD_CURR_FLAG",
+     "dtype":"string"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"MD_UPD_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"TROUBLE_REPORT_EVENT_TYPE_KEY",
+     "dtype":"bigint"
+    }
+  ]
+}

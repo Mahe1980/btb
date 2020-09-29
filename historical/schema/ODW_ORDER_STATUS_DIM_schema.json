@@ -1,0 +1,8 @@
+
+[
+  {"name":"ORDER_STATUS_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_STATUS_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"CANCEL_STATUS_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

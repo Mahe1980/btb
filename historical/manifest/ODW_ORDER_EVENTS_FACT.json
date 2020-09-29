@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "name": "CREATED_AT",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "CREATED_BY",
+      "dtype": "string"
+    },
+    {
+      "name": "EVENT_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "EVENT_SOURCE",
+      "dtype": "string"
+    },
+    {
+      "name": "EVENT_TYPE",
+      "dtype": "string"
+    },
+    {
+      "name": "MD_INS_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MESSAGE",
+      "dtype": "string"
+    },
+    {
+      "name": "ORDER_EVENT_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "ORDER_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "ORDER_KEY",
+      "dtype": "bigint"
+    }
+  ]
+ }

@@ -1,0 +1,10 @@
+#apache-airflow is installed by docker in container so do not add that here.
+#For local airflow library install it manually in your local python env.
+#set SLUGIFY_USES_TEXT_UNIDECODE=yes followed by pip install apache-airflow==1.10.2
+
+cx_Oracle==7.1.1
+pandas==0.24.1
+pyodbc==4.0.26
+pyyaml==3.13
+pycrypto==2.6.1
+pytest==4.3.0

@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+     "name": "BTB_BILL_TYPE_KEY",
+     "dtype": "bigint"
+    },
+    {
+     "name":"BTB_CHARGE_CODE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"BTB_CHARGE_DESCRIPTION_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"BTB_CHARGE_SUB_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"BTB_CHARGE_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"BTB_RECORD_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"CHARGE_DESCRIPTION",
+     "dtype":"string"
+    },
+    {
+     "name":"MD_BATCH_ID",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "fields": [
+    {
+      "name": "ACCOUNT_REFERENCE",
+      "dtype": "string"
+    },
+    {
+      "name": "ADDRESS_FIRST_LINE",
+      "dtype": "string"
+    },
+    {
+      "name": "ADDRESS_NAME",
+      "dtype": "string"
+    },
+    {
+      "name": "BILL_TITLE",
+      "dtype": "string"
+    },
+    {
+      "name": "BILL_TYPE",
+      "dtype": "string"
+    },
+    {
+      "name": "BTB_BILL_TYPE_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "BUSINESS_NAME",
+      "dtype": "string"
+    },
+    {
+      "name": "CUSTOMER_REFERENCE",
+      "dtype": "string"
+    },
+    {
+      "name": "MD_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "POST_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "SERVICE_TYPE",
+      "dtype": "string"
+    },
+    {
+      "name": "VAT_STATUS",
+      "dtype": "string"
+    }
+  ]
+ }

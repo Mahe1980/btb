@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "BILL_YEAR",
+      "dtype": "integer"
+    },
+    {
+      "name": "BTB_BILL_YEAR_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    }
+  ]
+ }

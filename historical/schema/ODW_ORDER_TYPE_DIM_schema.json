@@ -1,0 +1,10 @@
+
+[
+  {"name":"ORDER_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"PARENT_ORDER_TYPE_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ORDER_TYPE_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"ACQUISITION_TYPE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"PROVIDE_REQUEST_TYPE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

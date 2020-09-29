@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+     "name": "LAST_MODIFIED_DATE",
+     "dtype": "timestamp"
+    },
+    {
+     "name": "MD_INS_TS",
+     "dtype": "timestamp"
+    },
+    {
+     "name": "ORDER_ID",
+     "dtype": "bigint"
+    },
+    {
+     "name": "ORDER_SERVICES_KEY",
+     "dtype": "bigint"
+    },
+    {
+     "name": "SERVICE_ID",
+     "dtype": "bigint"
+    }
+  ]
+ }

@@ -1,0 +1,9 @@
+
+[
+  {"name":"SPM_SERVICE_PROBLEM_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"LINE_TEST_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"TROUBLE_REPORT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"APPOINTMENT_RESERVATION_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_BATCH_ID", "type": "INT64", "mode": "REQUIRED"}
+]

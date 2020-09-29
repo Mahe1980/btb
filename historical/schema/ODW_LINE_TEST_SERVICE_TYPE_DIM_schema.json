@@ -1,0 +1,11 @@
+
+[
+  {"name":"LINE_TEST_SERVICE_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SERVICE_TYPE", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"SERVICE_LEVEL", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"NEAR_END_STATUS", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"FAR_END_STATUS", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"PORT_STAT", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"INIT_STAT", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

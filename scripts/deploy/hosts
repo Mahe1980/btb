@@ -1,0 +1,7 @@
+[mapr_dev]
+tulan04.sns.sky.com
+[mapr_tst]
+tulan01.sns.sky.com
+[mapr:children]
+mapr_dev
+mapr_tst

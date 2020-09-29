@@ -1,0 +1,25 @@
+
+[
+  {"name":"ORDER_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_STATUS_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_STATUS_SET_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"ORDER_RECEIVED_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"CREATED_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"OPERATOR_TYPE_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"CANCEL_REQUESTED_DATE", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"OPERATOR_NOTES", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"BT_REFERENCE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"EXPECTED_DELIVERY_DATE", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"DELIVERY_PHONE_NUMBER", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"REQUESTED_DELIVERY_DATE", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"DELIVERY_POSTCODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"SNS_ADDRESS_REFERENCE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"LAST_MODIFIED_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_CURR_FLAG", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_EFFCTV_FROM_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_EFFCTV_TO_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_UPD_TS", "type": "TIMESTAMP", "mode": "NULLABLE"}
+]

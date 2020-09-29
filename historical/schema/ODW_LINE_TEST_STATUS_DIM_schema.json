@@ -1,0 +1,6 @@
+
+[
+  {"name":"LINE_TEST_STATUS_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"STATUS", "type": "STRING", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

@@ -1,0 +1,7 @@
+
+[
+  {"name":"BTB_BILL_YEAR_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BILL_YEAR", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name":"MD_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

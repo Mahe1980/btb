@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+     "name": "CREATED_BY",
+     "dtype": "string"
+    },
+    {
+     "name":"CREATED_DATE",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"EVENT_HISTORY_ID",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_BATCH_ID",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"NOTE",
+     "dtype":"string"
+    },
+    {
+     "name":"SMP_AGENT_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"TROUBLE_REPORT_EVENT_HISTORY_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"TROUBLE_REPORT_EVENT_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"TROUBLE_REPORT_KEY",
+     "dtype":"bigint"
+    }
+  ]
+}

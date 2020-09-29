@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+     "name": "FAR_END_STATUS",
+     "dtype": "string"
+    },
+    {
+     "name":"INIT_STAT",
+     "dtype":"string"
+    },
+    {
+     "name":"LINE_TEST_SERVICE_TYPE_KEY",
+     "dtype":"bigint"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"NEAR_END_STATUS",
+     "dtype":"string"
+    },
+    {
+     "name":"PORT_STAT",
+     "dtype":"string"
+    },
+    {
+     "name":"SERVICE_LEVEL",
+     "dtype":"string"
+    },
+    {
+     "name":"SERVICE_TYPE",
+     "dtype":"string"
+    }
+  ]
+}

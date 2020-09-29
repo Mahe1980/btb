@@ -1,0 +1,46 @@
+version: '2.1'
+services:
+    postgres:
+        image: postgres:9.6
+        restart: always
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+            - PGDATA=/var/lib/postgresql/data/pgdata
+        volumes:
+            - /mapr/flavius.sns.sky.com/prd/maprsouth/btb/pgdata:/var/lib/postgresql/data/pgdata
+        container_name: dwc_db
+    webserver:
+        image: dw-airflow
+        restart: always
+        depends_on:
+            - postgres
+        environment:
+            - LOAD_EX=n
+            - EXECUTOR=Local
+            - FERNET_KEY="grpB0L1_Mf5G1j71aWDUUNL3zdNKol-u8CvivEGbEOM="
+            - ENV=prd
+            - PYTHONPATH=/usr/local/airflow
+            - ORACLE_BASE=/opt/oracle
+            - ORACLE_HOME=/opt/oracle/instantclient_18_3
+            - ODBCINI=/etc/odbc.ini
+            - NZ_ODBC_INI_PATH=/etc
+            - NETEZZA=/opt/nz
+            - LD_LIBRARY_PATH=/opt/oracle/instantclient_18_3:/opt/nz/lib64
+            - PATH=/opt/nz:$PATH
+            - KEY=c76a9cabb3d8a1e958a603991f01e6bd4eb68221ae2a88c00bec0483e68a00da
+        volumes:
+            - ./src:/usr/local/airflow/src:z
+            - /mapr/flavius.sns.sky.com/prd/maprsouth/btb/logs:/usr/local/airflow/logs:z
+            - /mapr/flavius.sns.sky.com/tmp/btb/tmp:/usr/local/airflow/json_output
+            - /mapr-north/data/btb/delta:/usr/local/airflow/delta_output
+        ports:
+            - "11622:11622"
+        command: webserver
+        container_name: dwc
+        healthcheck:
+            test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+            interval: 30s
+            timeout: 30s
+            retries: 3

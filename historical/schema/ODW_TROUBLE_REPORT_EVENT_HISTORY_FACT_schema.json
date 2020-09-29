@@ -1,0 +1,13 @@
+
+[
+  {"name":"TROUBLE_REPORT_EVENT_HISTORY_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"TROUBLE_REPORT_EVENT_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"TROUBLE_REPORT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SMP_AGENT_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"EVENT_HISTORY_ID", "type": "INT64", "mode": "NULLABLE"},
+  {"name":"CREATED_DATE", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"CREATED_BY", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"NOTE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name":"MD_INS_BATCH_ID", "type": "INT64", "mode": "REQUIRED"}
+]

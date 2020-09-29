@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+     "name": "CANCEL_STATUS_CODE",
+     "dtype": "string"
+    },
+    {
+     "name":"MD_CURR_FLAG",
+     "dtype":"string"
+    },
+    {
+     "name":"MD_INS_TS",
+     "dtype":"timestamp"
+    },
+    {
+     "name":"ORDER_STATUS_CODE",
+     "dtype":"string"
+    },
+    {
+     "name":"ORDER_STATUS_KEY",
+     "dtype":"bigint"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+
+[
+  {"name":"ORDER_SERVICES_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"ORDER_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"SERVICE_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"LAST_MODIFIED_DATE", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

@@ -1,0 +1,11 @@
+
+[
+  {"name":"BTB_CHARGE_CODE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BTB_CHARGE_SUB_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BTB_CHARGE_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BTB_RECORD_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"BTB_BILL_TYPE_KEY", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"CHARGE_CODE", "type": "STRING", "mode": "NULLABLE"},
+  {"name":"MD_BATCH_ID", "type": "INT64", "mode": "REQUIRED"},
+  {"name":"MD_INS_TS", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]

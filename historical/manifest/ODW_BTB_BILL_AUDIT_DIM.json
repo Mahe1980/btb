@@ -1,0 +1,80 @@
+{
+  "fields": [
+    {
+      "name": "BTB_FILE_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "LANDED_ADJ_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "LANDED_ADJ_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "LANDED_EVENT_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "LANDED_EVENT_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "LANDED_PRODUCT_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "LANDED_PRODUCT_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "PROCESSED_DATETIME",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "TOTAL_LANDED_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "TOTAL_RECORDS_LANDED",
+      "dtype": "bigint"
+    },
+    {
+      "name": "TOTAL_RECORDS_WAREHOUSED",
+      "dtype": "bigint"
+    },
+    {
+      "name": "TOTAL_VALUE_WAREHOUSED",
+      "dtype": "double precision"
+    },
+    {
+      "name": "WAREHOUSE_ADJ_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "WAREHOUSE_ADJ_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "WAREHOUSE_EVENT_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "WAREHOUSE_EVENT_VALUE",
+      "dtype": "double precision"
+    },
+    {
+      "name": "WAREHOUSE_PRODUCT_RECORDS",
+      "dtype": "bigint"
+    },
+    {
+      "name": "WAREHOUSE_PRODUCT_VALUE",
+      "dtype": "double precision"
+    }
+  ]
+ }

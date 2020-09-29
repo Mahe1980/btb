@@ -1,0 +1,11 @@
+SELECT 
+    ORDER_STATUS_KEY,
+    CANCEL_STATUS_CODE,
+    ORDER_STATUS_CODE,
+    MD_INS_TS,
+    MD_CURR_FLAG
+FROM ODW_ORDER_STATUS_DIM
+WHERE (
+    MD_INS_TS >= '{from_ts}'
+    AND MD_INS_TS < '{to_ts}'
+);

@@ -1,0 +1,64 @@
+{
+  "fields": [
+    {
+      "name": "MD_CURR_FLAG",
+      "dtype": "string"
+    },
+    {
+      "name": "MD_EFFCTV_FROM_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_EFFCTV_TO_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_INS_ACTUAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_INITIAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_INS_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "MD_UPD_ACTUAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_UPD_INITIAL_BATCH_ID",
+      "dtype": "bigint"
+    },
+    {
+      "name": "MD_UPD_TS",
+      "dtype": "timestamp"
+    },
+    {
+      "name": "NETSTREAM_OPERATOR_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "OPERATOR_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "OPERATOR_DESCRIPTION",
+      "dtype": "string"
+    },
+    {
+      "name": "OPERATOR_KEY",
+      "dtype": "bigint"
+    },
+    {
+      "name": "PARENT_OPERATOR_CODE",
+      "dtype": "string"
+    },
+    {
+      "name": "RADIUS_DOMAIN",
+      "dtype": "string"
+    }
+  ]
+ }
