@@ -1,63 +1,14 @@
-$ docker images
-REPOSITORY          TAG                      IMAGE ID            CREATED             SIZE
-postgres            9.6                      7a313171f464        3 days ago          200 MB
-apache/airflow      v1-10-stable-python3.6   76e6489cffe7        4 days ago          752 MB
+DBT_POSTGRES_HOST=fdb_dbt_db
+DBT_POSTGRES_USER=dbt
+DBT_POSTGRES_PASSWORD=dbt
+DBT_POSTGRES_DB=dbt
+DBT_POSTGRES_PORT=5432
 
+AIRFLOW_POSTGRES_HOST=fdb_airflow_db
+AIRFLOW_POSTGRES_USER=airflow
+AIRFLOW_POSTGRES_PASSWORD=airflow
+AIRFLOW_POSTGRES_DB=airflow
+AIRFLOW_POSTGRES_PORT=5432
 
-$ docker container ls
-CONTAINER ID        IMAGE                                   COMMAND                  CREATED              STATUS                          PORTS               NAMES
-3f574baf1823        apache/airflow:v1-10-stable-python3.6   "/usr/bin/dumb-ini..."   About a minute ago   Restarting (1) 22 seconds ago                       obm_airflow
-598d6d7595a2        postgres:9.6                            "docker-entrypoint..."   About a minute ago   Up About a minute               5432/tcp            obm_postgres
-
-
-version: '3.7'
-services:
-    postgres:
-        image: postgres:9.6
-        environment:
-            - POSTGRES_USER=airflow
-            - POSTGRES_PASSWORD=airflow
-            - POSTGRES_DB=airflow
-        logging:
-            options:
-                max-size: 10m
-                max-file: "3"
-        container_name: my_postgres
-
-    webserver:
-        image: apache/airflow:v1-10-stable-python3.6
-        restart: always
-        depends_on:
-            - postgres
-        environment:
-            - AIRFLOW__CORE__LOAD_EX=y
-            - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
-            - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-        logging:
-            options:
-                max-size: 10m
-                max-file: "3"
-        ports:
-            - "8080:8080"
-        command: webserver
-        container_name: my_airflow
-        healthcheck:
-            test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
-            interval: 30s
-            timeout: 30s
-            retries: 3
-
-
-
-
-Error:
-
-[2021-01-25 16:45:39,157] {__init__.py:50} INFO - Using executor LocalExecutor
-[2021-01-25 16:45:39,158] {dagbag.py:417} INFO - Filling up the DagBag from /opt/airflow/dags
-Traceback (most recent call last):
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
-    cursor, statement, parameters, context
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
-    cursor.execute(statement, parameters)
-psycopg2.errors.UndefinedTable: relation "connection" does not exist
-LINE 2: FROM connection GROUP BY connection.conn_id
+AIRFLOW_USER=airflow
+AIRFLOW_PASSWORD=airflow
