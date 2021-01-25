@@ -1,5 +1,59 @@
-[2021-01-22 11:42:20,911] {__init__.py:50} INFO - Using executor LocalExecutor
-[2021-01-22 11:42:20,912] {dagbag.py:417} INFO - Filling up the DagBag from /opt/airflow/dags
+$ docker images
+REPOSITORY          TAG                      IMAGE ID            CREATED             SIZE
+postgres            9.6                      7a313171f464        3 days ago          200 MB
+apache/airflow      v1-10-stable-python3.6   76e6489cffe7        4 days ago          752 MB
+
+
+$ docker container ls
+CONTAINER ID        IMAGE                                   COMMAND                  CREATED              STATUS                          PORTS               NAMES
+3f574baf1823        apache/airflow:v1-10-stable-python3.6   "/usr/bin/dumb-ini..."   About a minute ago   Restarting (1) 22 seconds ago                       obm_airflow
+598d6d7595a2        postgres:9.6                            "docker-entrypoint..."   About a minute ago   Up About a minute               5432/tcp            obm_postgres
+
+
+version: '3.7'
+services:
+    postgres:
+        image: postgres:9.6
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+        logging:
+            options:
+                max-size: 10m
+                max-file: "3"
+        container_name: my_postgres
+
+    webserver:
+        image: apache/airflow:v1-10-stable-python3.6
+        restart: always
+        depends_on:
+            - postgres
+        environment:
+            - AIRFLOW__CORE__LOAD_EX=y
+            - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+            - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+        logging:
+            options:
+                max-size: 10m
+                max-file: "3"
+        ports:
+            - "8080:8080"
+        command: webserver
+        container_name: my_airflow
+        healthcheck:
+            test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+            interval: 30s
+            timeout: 30s
+            retries: 3
+
+
+
+
+Error:
+
+[2021-01-25 16:45:39,157] {__init__.py:50} INFO - Using executor LocalExecutor
+[2021-01-25 16:45:39,158] {dagbag.py:417} INFO - Filling up the DagBag from /opt/airflow/dags
 Traceback (most recent call last):
   File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
     cursor, statement, parameters, context
@@ -7,50 +61,3 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 psycopg2.errors.UndefinedTable: relation "connection" does not exist
 LINE 2: FROM connection GROUP BY connection.conn_id
-             ^
-The above exception was the direct cause of the following exception:
-Traceback (most recent call last):
-  File "/home/airflow/.local/bin/airflow", line 37, in <module>
-    args.func(args)
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 81, in wrapper
-    return f(*args, **kwargs)
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/bin/cli.py", line 1179, in webserver
-    app = cached_app_rbac(None) if settings.RBAC else cached_app(None)
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/www/app.py", line 244, in cached_app
-    app = create_app(config, testing)
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/www/app.py", line 99, in create_app
-    from airflow.www import views
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/www/views.py", line 2504, in <module>
-    class ChartModelView(wwwutils.DataProfilingMixin, AirflowModelView):
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/www/views.py", line 2595, in ChartModelView
-    'conn_id': _connection_ids()
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/db.py", line 74, in wrapper
-    return func(*args, **kwargs)
-  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/www/views.py", line 2501, in _connection_ids
-    .group_by(Connection.conn_id))]
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
-    return self._execute_and_instances(context)
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3560, in _execute_and_instances
-    result = conn.execute(querycontext.statement, self._params)
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
-    return meth(self, multiparams, params)
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
-    return connection._execute_clauseelement(self, multiparams, params)
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
-    distilled_params,
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
-    e, statement, parameters, cursor, context
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
-    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
-    raise exception
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
-    cursor, statement, parameters, context
-  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
-    cursor.execute(statement, parameters)
-sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "connection" does not exist
-LINE 2: FROM connection GROUP BY connection.conn_id
-             ^
-[SQL: SELECT connection.conn_id AS connection_conn_id
-FROM connection GROUP BY connection.conn_id]
-(Background on this error at: http://sqlalche.me/e/13/f405)
