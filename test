@@ -1,1 +1,14 @@
-AIRFLOW__WEBSERVER__BASE_URL=http://host:port
+[2021-01-26 10:50:58,446] {dagbag.py:440} INFO - Filling up the DagBag from /dev/null
+[2021-01-26 10:50:58,495] {manager.py:727} WARNING - No user yet created, use flask fab command to do it.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "dag" does not exist
+LINE 2: FROM dag
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
